@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> CWC </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="cwc.css" rel="stylesheet">
+    
+    <style>
+.imgdiv {
+    float: left;
+}
+    
+    </style>
+    
+    <script type="text/javascript">
+// place your images in this array
+var random_images_array = ['img1.png', 'img2.png', 'banner2.png', 'banner3.png','banner4.png','banner5.png','banner6.png','banner7.png','banner8.png','banner9.png'];
+    
+function getRandomImage(imgAr, path) {
+    path = path || 'img/'; // default path here
+    var num = Math.floor( Math.random() * imgAr.length );
+    var img = imgAr[ num ];
+    var imgStr = '<img src="' + path + img + '" alt = "">';
+    document.write(imgStr); document.close();
+}
+
+</script>
+</head>
+<body>
+<div class="header">
+	    <!-- This script segment displays an image from the array -->
+    <script type="text/javascript">getRandomImage(random_images_array, 'img/')</script>
+
+</div>
+<div class="row">
+	<div class="col-9 col-m-12">
+	 <p>
+	
+	SOME TEXT
+		
+	</p>
+	</div>
+	<div class="col-2 col-m-2 menu">
+	  <ul>
+		<li><a href="#">Login</a></li>
+		<li><a href="#" >About Us</a></li>
+		<li><a href="#" >Contact</a></li>
+		<img src = "img/img1.png" width = "350px" class = "imagesize";> 
+	</div>
+</div><!-- end row-->
+<div class="footer">
+	<center>	
+		Footer
+	</center>
+</div>
+
+</body>
+</html>
